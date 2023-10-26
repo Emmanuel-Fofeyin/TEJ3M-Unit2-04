@@ -16,41 +16,47 @@ void setup()
   pinMode(11, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(13, OUTPUT);
+  Serial.begin(4800);
 
 }
 
 void loop()
 
 {
-
+// Blue
   digitalWrite(11, HIGH);
   digitalWrite(12, LOW);
   digitalWrite(13, LOW);
+  Serial.println("Blue");
   delay(1000); // Wait for 1000 millisecond(s)
-  
+  // Green
   digitalWrite(11, LOW);
   digitalWrite(12, HIGH);
   digitalWrite(13, LOW);
+  Serial.println("Green");
   delay(1000); // Wait for 1000 millisecond(s)
-  
+  // Red
   digitalWrite(11, LOW);
   digitalWrite(12, LOW);
   digitalWrite(13, HIGH);
+  Serial.println("Red");
   delay(1000); // Wait for 1000 millisecond(s)
-
+  // Turquoise
   digitalWrite(11, HIGH);
   digitalWrite(12, HIGH);
   digitalWrite(13, LOW);
+  Serial.println("Turquoise");
   delay(1000); // Wait for 1000 millisecond(s)
-  
+  // yellow
   digitalWrite(11, LOW);
   digitalWrite(12, HIGH);
   digitalWrite(13, HIGH);
+  Serial.println("Yellow");
   delay(1000); // Wait for 1000 millisecond(s)
-  
+  // white
   digitalWrite(11, HIGH);
   digitalWrite(12, HIGH);
   digitalWrite(13, HIGH);
-  
+  Serial.println("White");
   delay(1000); // Wait
 }
